@@ -1,7 +1,3 @@
--- Internship Portal Database Schema
--- Create the database first if not exists: CREATE DATABASE internship_portal;
-
-USE internship_portal;
 
 -- Companies Table
 CREATE TABLE IF NOT EXISTS companies (
@@ -37,6 +33,4 @@ CREATE TABLE IF NOT EXISTS internships (
     FOREIGN KEY (company_id) REFERENCES companies(id) ON DELETE CASCADE
 );
 
--- Sample Data (Optional)
--- INSERT INTO companies (company_name, email, password, phone, address, industry, description, website)
--- VALUES ('Tech Corp', 'hr@techcorp.com', 'password_hash_here', '9876543210', 'New Delhi', 'IT', 'Leading tech firm', 'www.techcorp.com');
+
