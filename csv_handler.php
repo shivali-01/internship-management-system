@@ -5,7 +5,7 @@ function saveToCSV($data) {
     $fp = fopen($file, 'a');
     if ($fp) {
         if (!$file_exists) {
-            fputcsv($fp, ['ID', 'Company Name', 'Email', 'Industry', 'Status', 'Date']);
+            fputcsv($fp, ['ID', 'Company Name', 'Email', 'Industry',', 'Date']);
         }
         fputcsv($fp, $data);
         fclose($fp);
