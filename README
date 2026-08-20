@@ -139,7 +139,7 @@ define('DB_NAME', 'internship_portal'); // DB name from Step 2
 
 // Site Configuration
 define('SITE_NAME', 'Internship Portal');
-define('BASE_URL', 'http://localhost/internship-portal'); // ⚠️ UPDATE THIS
+define('BASE_URL', 'http://localhost/internship-management-system-main/'); // ⚠️ UPDATE THIS
 ```
 
 > ⚠️ **Critical**: Make sure `BASE_URL` matches your actual folder path. Examples:
