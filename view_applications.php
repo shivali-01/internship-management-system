@@ -37,13 +37,13 @@ $search = trim($_GET['search'] ?? '');
             $hasData = false;
 
             while (($data = fgetcsv($fp)) !== FALSE) {
-                // Header row skip karein
+                
                 if ($row_count == 0) {
                     $row_count++;
                     continue;
                 }
 
-                // Agar search term di gayi hai, toh Company Name (index 1) se match karein
+            
                 if (!empty($search)) {
                     if (stripos($data[1], $search) === FALSE) {
                         continue;
